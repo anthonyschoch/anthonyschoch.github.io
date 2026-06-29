@@ -295,12 +295,28 @@
   var root = document;
   var base = 'rgba(251,250,245,0.62)';
 
-  // force-play autoplay videos (in case the browser gates autoplay)
-  document.querySelectorAll('video[autoplay]').forEach(function (v) {
-    v.muted = true;
-    var p = v.play();
-    if (p && p.catch) p.catch(function(){});
-  });
+  // robust autoplay: kick playback, retry on view + first interaction
+  (function () {
+    var vids = Array.prototype.slice.call(document.querySelectorAll('video[autoplay]'));
+    if (!vids.length) return;
+    var kick = function (v) { v.muted = true; var p = v.play(); if (p && p.catch) p.catch(function(){}); };
+    vids.forEach(kick);
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) { if (e.isIntersecting) kick(e.target); });
+      }, { threshold: 0.1 });
+      vids.forEach(function (v) { io.observe(v); });
+    }
+    var once = function () {
+      vids.forEach(kick);
+      document.removeEventListener('click', once);
+      document.removeEventListener('touchstart', once);
+      document.removeEventListener('scroll', once);
+    };
+    document.addEventListener('click', once, { passive: true });
+    document.addEventListener('touchstart', once, { passive: true });
+    document.addEventListener('scroll', once, { passive: true });
+  })();
 
   // ---- Lightbox (architecture pédagogique) ----
   var lb = root.querySelector('[data-lightbox]');
