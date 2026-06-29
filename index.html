@@ -34,7 +34,7 @@
 
   /* ---------- PROJECTS (one interactive component) ---------- */
   .proj-card{display:block;cursor:pointer;text-decoration:none}
-  .proj-card .proj-img{aspect-ratio:4/3;overflow:hidden;border-radius:10px;background:#E8E3D6;border:1px solid rgba(35,33,27,0.08)}
+  .proj-card .proj-img{aspect-ratio:5/4;overflow:hidden;border-radius:18px;background:#E8E3D6;border:1px solid rgba(35,33,27,0.08)}
   .proj-card .proj-img img,.proj-card .proj-img video{width:100%;height:100%;object-fit:cover;object-position:top center;display:block;transition:transform .6s cubic-bezier(.2,.6,.2,1)}
   .proj-card .proj-text{transition:transform .35s ease}
   .proj-card:hover .proj-img img,.proj-card:hover .proj-img video{transform:scale(1.045)}
@@ -47,7 +47,7 @@
   .foot-a:hover{color:#B0614A}
 
   /* ---------- LAYOUT ---------- */
-  .r-hero{display:grid;grid-template-columns:300px 1fr;gap:48px;align-items:center}
+  .r-hero{display:grid;grid-template-columns:340px 1fr;gap:56px;align-items:center}
   .proj-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(40px,4.5vw,60px) clamp(26px,3.2vw,48px)}
   .r-foot{display:flex;gap:44px;align-items:flex-start}
   .r-3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
@@ -55,7 +55,7 @@
     section > div{padding-left:26px!important;padding-right:26px!important}
     nav > div{padding-left:22px!important;padding-right:22px!important}
     .r-hero{grid-template-columns:1fr!important;gap:40px!important}
-    .r-hero .r-photo{max-width:300px}
+    .r-hero .r-photo{max-width:320px}
     .r-3{grid-template-columns:1fr!important}
     .r-foot{flex-direction:column!important;gap:30px!important}
   }
@@ -110,13 +110,13 @@
 
   <section id="realisations" style="background:#F4F1E8">
     <div style="max-width:1180px;margin:0 auto;padding:52px 48px 96px">
-      <h2 class="t-h2" style="margin: 0 0 56px; font-family:'Satoshi',sans-serif">Projets sélectionnés</h2>
+      <h2 class="t-h2" style="margin: 0 0 56px; font-family:'Satoshi',sans-serif; font-weight:600">Projets sélectionnés</h2>
       <div class="proj-grid">
         <a href="cas-localisation.html" class="proj-card">
           <div class="proj-img"><img loading="lazy" decoding="async" src="assets/deliverable-localisation.png" alt="Workflow IA de localisation"></div>
           <div class="proj-text" style="padding-top:22px">
             <div class="t-eyebrow" style="color:#5A5648;margin-bottom:12px">Workflow IA · Accor Academy</div>
-            <h3 class="t-h3" style="margin: 0 0 7px; font-family:'Satoshi',sans-serif">Workflow IA de localisation</h3>
+            <h3 class="t-h3" style="margin: 0 0 7px">Workflow IA de localisation</h3>
             <p class="t-caption" style="max-width:420px">Automatisation de la localisation de contenus dans plus de 10 langues.</p>
           </div>
         </a>
@@ -124,7 +124,7 @@
           <div class="proj-img"><img loading="lazy" decoding="async" src="assets/deliverable-all-companion.png" alt="Agent RAG · Onboarding ALL"></div>
           <div class="proj-text" style="padding-top:22px">
             <div class="t-eyebrow" style="color:#5A5648;margin-bottom:12px">Agent RAG · Accor</div>
-            <h3 class="t-h3" style="margin: 0 0 7px; font-family:'Satoshi',sans-serif">Agent RAG · Onboarding ALL</h3>
+            <h3 class="t-h3" style="margin: 0 0 7px">Agent RAG · Onboarding ALL</h3>
             <p class="t-caption" style="max-width:420px">Assistant IA métier pour les équipes Front Office.</p>
           </div>
         </a>
@@ -132,7 +132,7 @@
           <div class="proj-img"><video src="assets/avatar-ia.mp4" poster="assets/avatar-ia-poster.webp" autoplay loop muted playsinline preload="auto" aria-label="Avatar IA · Simulation commerciale" style="width:100%;height:100%;object-fit:cover;object-position:top center;display:block"></video></div>
           <div class="proj-text" style="padding-top:22px">
             <div class="t-eyebrow" style="color:#5A5648;margin-bottom:12px">Simulation IA · Accor ALL</div>
-            <h3 class="t-h3" style="margin:0 0 7px; font-family:'Satoshi',sans-serif">Avatar IA · Simulation commerciale</h3>
+            <h3 class="t-h3" style="margin:0 0 7px">Avatar IA · Simulation commerciale</h3>
             <p class="t-caption" style="max-width:420px">Entraînement conversationnel IA pour développer les ventes ALL.</p>
           </div>
         </a>
@@ -140,7 +140,7 @@
           <div class="proj-img"><img loading="lazy" decoding="async" src="assets/deliverable-guerbet.png" alt="Onboarding digital international"></div>
           <div class="proj-text" style="padding-top:22px">
             <div class="t-eyebrow" style="color:#5A5648;margin-bottom:12px">Onboarding digital · Guerbet</div>
-            <h3 class="t-h3" style="margin:0 0 7px; font-family:'Satoshi',sans-serif">Onboarding digital international</h3>
+            <h3 class="t-h3" style="margin:0 0 7px">Onboarding digital international</h3>
             <p class="t-caption" style="max-width:420px">Parcours d’onboarding digital déployé dans 10 pays.</p>
           </div>
         </a>
