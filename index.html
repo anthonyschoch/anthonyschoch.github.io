@@ -47,9 +47,9 @@
   /* ---------- PROJECTS (one interactive component) ---------- */
   .proj-card{display:block;cursor:pointer;text-decoration:none}
   .proj-card .proj-img{aspect-ratio:4/3;overflow:hidden;border-radius:10px;background:#E8E3D6;border:1px solid rgba(35,33,27,0.08)}
-  .proj-card .proj-img img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block;transition:transform .6s cubic-bezier(.2,.6,.2,1)}
+  .proj-card .proj-img img,.proj-card .proj-img video{width:100%;height:100%;object-fit:cover;object-position:top center;display:block;transition:transform .6s cubic-bezier(.2,.6,.2,1)}
   .proj-card .proj-text{transition:transform .35s ease}
-  .proj-card:hover .proj-img img{transform:scale(1.045)}
+  .proj-card:hover .proj-img img,.proj-card:hover .proj-img video{transform:scale(1.045)}
   .proj-card:hover .proj-text{transform:translateY(-3px)}
   .proj-card .t-h3{transition:color .3s ease}
   .proj-card:hover .t-h3{color:#B0614A}
@@ -141,7 +141,7 @@
           </div>
         </a>
         <a href="cas-simulation-avatar.html" class="proj-card">
-          <div class="proj-img"><video src="assets/avatar-ia.mp4" autoplay loop muted playsinline aria-label="Avatar IA — Simulation commerciale" style="width:100%;height:100%;object-fit:cover;object-position:top center;display:block"></video></div>
+          <div class="proj-img"><video src="assets/avatar-ia.mp4" poster="assets/avatar-ia-poster.webp" autoplay loop muted playsinline preload="auto" aria-label="Avatar IA — Simulation commerciale" style="width:100%;height:100%;object-fit:cover;object-position:top center;display:block"></video></div>
           <div class="proj-text" style="padding-top:22px">
             <div class="t-eyebrow" style="color:#5A5648;margin-bottom:12px">Simulation IA · Accor ALL</div>
             <h3 class="t-h3" style="margin:0 0 7px">Avatar IA — Simulation commerciale</h3>
