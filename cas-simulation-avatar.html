@@ -184,7 +184,7 @@
           <div style="font-family:'Satoshi';font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:0.14em;color:#9A4F3A;margin-bottom:6px">Architecture pédagogique</div>
           <p style="font-family:'Satoshi';font-size:15px;line-height:1.5;color:#5A5648;margin:0 0 24px;max-width:640px">La logique pédagogique derrière la simulation : un scénario à embranchements qui adapte la réaction du client à chaque choix de l'apprenant.</p>
           <button type="button" data-lightbox-open style="display:block;width:100%;max-width:820px;margin:0 auto;background:#FBFAF5;border:1px solid rgba(35,33,27,0.10);border-radius:10px;padding:clamp(16px,2.2vw,26px);cursor:zoom-in;font:inherit" aria-label="Agrandir le schéma de l'architecture pédagogique">
-            <img src="assets/architecture-pedagogique.jpg" alt="Architecture pédagogique de la simulation : scénario conversationnel à embranchements" style="width:100%;height:auto;display:block;border-radius:6px">
+            <img loading="lazy" decoding="async" src="assets/architecture-pedagogique.jpg" alt="Architecture pédagogique de la simulation : scénario conversationnel à embranchements" style="width:100%;height:auto;display:block;border-radius:6px">
           </button>
           <figcaption style="display:flex;align-items:flex-start;gap:12px;margin-top:18px"><span style="width:22px;height:2px;background:#B0614A;margin-top:8px;flex:none"></span><span style="font-family:'Satoshi';font-size:13px;font-style:italic;line-height:1.5;color:#5A5648;max-width:760px">Architecture pédagogique de la simulation : scénario conversationnel à embranchements. <span style="color:#9A4F3A;font-style:normal;font-weight:600">Cliquer pour agrandir.</span></span></figcaption>
         </div>
@@ -230,17 +230,15 @@
         </div>
 
         <!-- Bloc 3 · Le livrable · Simulation conversationnelle IA -->
-        <sc-if value="{{ showCaptures }}" hint-placeholder-val="{{ true }}">
         <div style="margin-top:48px">
           <div style="font-family:'Satoshi';font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:0.14em;color:#9A4F3A;margin-bottom:24px">Le livrable · Simulation conversationnelle IA</div>
           <figure style="margin:0">
             <div style="background:#E8E3D6;border:1px solid rgba(35,33,27,0.10);border-radius:14px;padding:clamp(24px,3.5vw,46px);box-shadow:0 22px 55px -34px rgba(35,33,27,0.5);display:flex;justify-content:center;align-items:center">
-              <img src="assets/simulation-avatar.gif" alt="Simulation conversationnelle avec avatar IA : entraînement au pitch ALL" style="width:100%;max-width:360px;height:auto;display:block;border-radius:18px;box-shadow:0 22px 44px -20px rgba(0,0,0,0.5)">
+              <video src="assets/simulation-avatar.mp4" autoplay loop muted playsinline aria-label="Simulation conversationnelle avec avatar IA : entraînement au pitch ALL" style="width:100%;max-width:360px;height:auto;display:block;border-radius:18px;box-shadow:0 22px 44px -20px rgba(0,0,0,0.5)"></video>
             </div>
             <figcaption style="display:flex;align-items:flex-start;gap:12px;margin-top:18px"><span style="width:22px;height:2px;background:#B0614A;margin-top:8px;flex:none"></span><span style="font-family:'Satoshi';font-size:13px;font-style:italic;line-height:1.5;color:#5A5648;max-width:700px">Simulation conversationnelle avec avatar IA permettant de s'entraîner au pitch ALL dans un environnement sécurisé.</span></figcaption>
           </figure>
         </div>
-        </sc-if>
       </div>
 
       <!-- 03 · IMPACT -->
@@ -282,7 +280,7 @@
   <!-- Lightbox plein écran pour l'architecture pédagogique -->
   <div data-lightbox style="position:fixed;inset:0;z-index:200;background:rgba(20,18,14,0.92);display:none;align-items:center;justify-content:center;padding:32px;overflow:hidden;cursor:zoom-out;opacity:0;transition:opacity .25s ease">
     <button type="button" data-lightbox-close aria-label="Fermer" style="position:fixed;top:22px;right:26px;z-index:6;width:46px;height:46px;border-radius:50%;border:1px solid rgba(251,250,245,0.45);background:rgba(20,18,14,0.72);color:#FBFAF5;font-size:22px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center">×</button>
-    <img data-lightbox-img src="assets/architecture-pedagogique.jpg" alt="Architecture pédagogique de la simulation : vue agrandie" style="max-width:96vw;max-height:90vh;width:auto;height:auto;display:block;border-radius:6px;box-shadow:0 30px 80px -20px rgba(0,0,0,0.6)">
+    <img loading="lazy" decoding="async" data-lightbox-img src="assets/architecture-pedagogique.jpg" alt="Architecture pédagogique de la simulation : vue agrandie" style="max-width:96vw;max-height:90vh;width:auto;height:auto;display:block;border-radius:6px;box-shadow:0 30px 80px -20px rgba(0,0,0,0.6)">
   </div>
 
   
