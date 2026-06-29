@@ -3,18 +3,6 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="./support.js"></script>
-</head>
-<body>
-<template id="__bundler_thumbnail">
-  <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-    <rect width="100" height="100" fill="#1d2b3d"/>
-    <text x="50" y="48" dominant-baseline="central" text-anchor="middle" font-family="Georgia, serif" font-size="32" fill="#F4F1E8">AS</text>
-    <rect x="34" y="66" width="32" height="3" fill="#B0614A"/>
-  </svg>
-</template>
-<x-dc>
-<helmet>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="preconnect" href="https://api.fontshare.com" crossorigin="">
@@ -116,9 +104,10 @@
   }
   @media (max-width: 540px){ .r-navlinks{display:none!important} }
 
+  @media (max-width: 720px){ .bp-arrow{transform:rotate(90deg)} }
 </style>
-</helmet>
-
+</head>
+<body>
 <div class="page-main" style="background:#F4F1E8;font-family:'Satoshi',sans-serif;color:#23211B;-webkit-font-smoothing:antialiased">
 
   <nav data-active="realisations" style="position:sticky;top:0;z-index:50;background:#1d2b3d;border-bottom:1px solid rgba(255,255,255,0.08)">
@@ -194,8 +183,8 @@
         <!-- Bloc 1 · Blueprint du parcours -->
         <div style="margin-top:54px">
           <div style="font-family:'Satoshi';font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:0.1em;color:#5A5648;margin-bottom:20px">BLUEPRINT</div>
-          <div style="background:#FBFAF5;border:1px solid rgba(35,33,27,0.12);border-radius:14px;padding:clamp(20px,2.4vw,32px);box-shadow:0 18px 44px -30px rgba(35,33,27,0.35);overflow-x:auto">
-            <img loading="lazy" decoding="async" src="assets/blueprint-guerbet.png" alt="Blueprint pédagogique du parcours d'onboarding : Welcome, Notre histoire, Nos métiers, Découvrir les sites, Rencontrer les équipes, Quiz de mise en situation, Ressources & contacts, Certification" style="display:block;width:100%;min-width:760px;height:auto">
+          <div style="background:#FBFAF5;border:1px solid rgba(35,33,27,0.12);border-radius:14px;padding:clamp(20px,2.4vw,32px);box-shadow:0 18px 44px -30px rgba(35,33,27,0.35)">
+<div class="bp-flow" style="display:flex;flex-wrap:wrap;align-items:stretch;gap:10px"><div style="flex:1 1 150px;min-width:150px;background:#FBFAF5;border:1px solid rgba(35,33,27,0.12);border-radius:10px;padding:16px 16px 18px;display:flex;flex-direction:column;gap:8px"><span style="font-family:'Satoshi';font-size:11px;font-weight:700;letter-spacing:0.04em;color:#B0614A">01</span><span style="font-family:'Satoshi';font-size:14.5px;font-weight:600;line-height:1.25;color:#23211B">Welcome</span><span style="font-family:'Satoshi';font-size:12.5px;line-height:1.4;color:#6B6757">Accueil &amp; objectifs du parcours</span></div><div class="bp-arrow" style="display:flex;align-items:center;color:#B0614A;font-size:18px;flex:none">&rarr;</div><div style="flex:1 1 150px;min-width:150px;background:#FBFAF5;border:1px solid rgba(35,33,27,0.12);border-radius:10px;padding:16px 16px 18px;display:flex;flex-direction:column;gap:8px"><span style="font-family:'Satoshi';font-size:11px;font-weight:700;letter-spacing:0.04em;color:#B0614A">02</span><span style="font-family:'Satoshi';font-size:14.5px;font-weight:600;line-height:1.25;color:#23211B">Notre histoire</span><span style="font-family:'Satoshi';font-size:12.5px;line-height:1.4;color:#6B6757">Identité et culture Guerbet</span></div><div class="bp-arrow" style="display:flex;align-items:center;color:#B0614A;font-size:18px;flex:none">&rarr;</div><div style="flex:1 1 150px;min-width:150px;background:#FBFAF5;border:1px solid rgba(35,33,27,0.12);border-radius:10px;padding:16px 16px 18px;display:flex;flex-direction:column;gap:8px"><span style="font-family:'Satoshi';font-size:11px;font-weight:700;letter-spacing:0.04em;color:#B0614A">03</span><span style="font-family:'Satoshi';font-size:14.5px;font-weight:600;line-height:1.25;color:#23211B">Nos métiers</span><span style="font-family:'Satoshi';font-size:12.5px;line-height:1.4;color:#6B6757">Panorama des activités</span></div><div class="bp-arrow" style="display:flex;align-items:center;color:#B0614A;font-size:18px;flex:none">&rarr;</div><div style="flex:1 1 150px;min-width:150px;background:#FBFAF5;border:1px solid rgba(35,33,27,0.12);border-radius:10px;padding:16px 16px 18px;display:flex;flex-direction:column;gap:8px"><span style="font-family:'Satoshi';font-size:11px;font-weight:700;letter-spacing:0.04em;color:#B0614A">04</span><span style="font-family:'Satoshi';font-size:14.5px;font-weight:600;line-height:1.25;color:#23211B">Découvrir les sites</span><span style="font-family:'Satoshi';font-size:12.5px;line-height:1.4;color:#6B6757">Implantations internationales</span></div><div class="bp-arrow" style="display:flex;align-items:center;color:#B0614A;font-size:18px;flex:none">&rarr;</div><div style="flex:1 1 150px;min-width:150px;background:#FBFAF5;border:1px solid rgba(35,33,27,0.12);border-radius:10px;padding:16px 16px 18px;display:flex;flex-direction:column;gap:8px"><span style="font-family:'Satoshi';font-size:11px;font-weight:700;letter-spacing:0.04em;color:#B0614A">05</span><span style="font-family:'Satoshi';font-size:14.5px;font-weight:600;line-height:1.25;color:#23211B">Rencontrer les équipes</span><span style="font-family:'Satoshi';font-size:12.5px;line-height:1.4;color:#6B6757">Interlocuteurs clés</span></div><div class="bp-arrow" style="display:flex;align-items:center;color:#B0614A;font-size:18px;flex:none">&rarr;</div><div style="flex:1 1 150px;min-width:150px;background:#FBFAF5;border:1px solid rgba(35,33,27,0.12);border-radius:10px;padding:16px 16px 18px;display:flex;flex-direction:column;gap:8px"><span style="font-family:'Satoshi';font-size:11px;font-weight:700;letter-spacing:0.04em;color:#B0614A">06</span><span style="font-family:'Satoshi';font-size:14.5px;font-weight:600;line-height:1.25;color:#23211B">Quiz de mise en situation</span><span style="font-family:'Satoshi';font-size:12.5px;line-height:1.4;color:#6B6757">Ancrage par la pratique</span></div><div class="bp-arrow" style="display:flex;align-items:center;color:#B0614A;font-size:18px;flex:none">&rarr;</div><div style="flex:1 1 150px;min-width:150px;background:#FBFAF5;border:1px solid rgba(35,33,27,0.12);border-radius:10px;padding:16px 16px 18px;display:flex;flex-direction:column;gap:8px"><span style="font-family:'Satoshi';font-size:11px;font-weight:700;letter-spacing:0.04em;color:#B0614A">07</span><span style="font-family:'Satoshi';font-size:14.5px;font-weight:600;line-height:1.25;color:#23211B">Ressources &amp; contacts</span><span style="font-family:'Satoshi';font-size:12.5px;line-height:1.4;color:#6B6757">Boîte à outils du nouvel arrivant</span></div><div class="bp-arrow" style="display:flex;align-items:center;color:#B0614A;font-size:18px;flex:none">&rarr;</div><div style="flex:1 1 150px;min-width:150px;background:#FBFAF5;border:1px solid rgba(35,33,27,0.12);border-radius:10px;padding:16px 16px 18px;display:flex;flex-direction:column;gap:8px"><span style="font-family:'Satoshi';font-size:11px;font-weight:700;letter-spacing:0.04em;color:#B0614A">08</span><span style="font-family:'Satoshi';font-size:14.5px;font-weight:600;line-height:1.25;color:#23211B">Certification</span><span style="font-family:'Satoshi';font-size:12.5px;line-height:1.4;color:#6B6757">Validation des acquis</span></div></div>
           </div>
           <div style="display:flex;align-items:flex-start;gap:12px;margin-top:18px"><span style="width:22px;height:2px;background:#B0614A;margin-top:8px;flex:none"></span><span style="font-family:'Satoshi';font-size:13px;font-style:italic;line-height:1.5;color:#5A5648;max-width:720px">L'architecture pédagogique du parcours, de l'accueil à la certification, conçue avant la production des écrans.</span></div>
         </div>
@@ -275,7 +264,6 @@
   </footer>
 
 </div>
-</x-dc>
 <script>
 (function () {
   function __run() {

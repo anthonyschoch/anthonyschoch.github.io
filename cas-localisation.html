@@ -3,18 +3,6 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="./support.js"></script>
-</head>
-<body>
-<template id="__bundler_thumbnail">
-  <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-    <rect width="100" height="100" fill="#1d2b3d"/>
-    <text x="50" y="48" dominant-baseline="central" text-anchor="middle" font-family="Georgia, serif" font-size="32" fill="#F4F1E8">AS</text>
-    <rect x="34" y="66" width="32" height="3" fill="#B0614A"/>
-  </svg>
-</template>
-<x-dc>
-<helmet>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="preconnect" href="https://api.fontshare.com" crossorigin="">
@@ -117,8 +105,8 @@
   @media (max-width: 540px){ .r-navlinks{display:none!important} .r-meta4{grid-template-columns:1fr!important} .r-meta4 > div{padding:20px 0 0 0!important;border-left:none!important;border-top:1px solid rgba(35,33,27,0.10)} .r-meta4 > div:first-child{border-top:none} }
 
 </style>
-</helmet>
-
+</head>
+<body>
 <div class="page-main" style="background:#F4F1E8;font-family:'Satoshi',sans-serif;color:#23211B;-webkit-font-smoothing:antialiased">
 
   <nav data-active="realisations" style="position:sticky;top:0;z-index:50;background:#1d2b3d;border-bottom:1px solid rgba(255,255,255,0.08)">
@@ -276,7 +264,6 @@
   </footer>
 
 </div>
-</x-dc>
 <script>
 (function () {
   function __run() {

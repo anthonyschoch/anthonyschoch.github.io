@@ -5,18 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Anthony Schoch · Consultant Learning, IA & Performance</title>
 <meta name="description" content="Portfolio d'Anthony Schoch · conception de solutions Learning, IA appliquée et performance pour grands comptes. Cas Accor, Guerbet.">
-<script src="./support.js"></script>
-</head>
-<body>
-<template id="__bundler_thumbnail">
-  <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-    <rect width="100" height="100" fill="#1d2b3d"/>
-    <text x="50" y="48" dominant-baseline="central" text-anchor="middle" font-family="Georgia, serif" font-size="32" fill="#F4F1E8">AS</text>
-    <rect x="34" y="66" width="32" height="3" fill="#B0614A"/>
-  </svg>
-</template>
-<x-dc>
-<helmet>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="preconnect" href="https://api.fontshare.com" crossorigin="">
@@ -75,8 +63,8 @@
   @media (max-width: 540px){ .r-navlinks{display:none!important} }
 
 </style>
-</helmet>
-
+</head>
+<body>
 <div class="page-main" style="background:#F4F1E8;font-family:'Satoshi',sans-serif;color:#23211B;-webkit-font-smoothing:antialiased">
 
   <nav data-active="realisations" style="position:sticky;top:0;z-index:50;background:#1d2b3d;border-bottom:1px solid rgba(255,255,255,0.08)">
@@ -176,7 +164,6 @@
   </footer>
 
 </div>
-</x-dc>
 <script>
 (function () {
   function __run() {
@@ -197,6 +184,12 @@
     a.addEventListener('mouseleave', function () { paint(on); });
   });
 
+  // force-play autoplay videos (in case the browser gates autoplay)
+  document.querySelectorAll('video[autoplay]').forEach(function (v) {
+    v.muted = true;
+    var p = v.play();
+    if (p && p.catch) p.catch(function(){});
+  });
   // hero entrance animation (respects reduced-motion)
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var items = Array.prototype.slice.call(root.querySelectorAll('[data-hero] .h-item'));
